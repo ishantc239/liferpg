@@ -982,7 +982,7 @@ const DL=['M','T','W','T','F','S','S','M','T','W','T','F','S','S'];
 const EMOJIS=['🎯','💪','🧠','🌍','💰','❤️','🏆','⚡','🔥','🚀','🎨','📚','🏋️','🎵','✈️','🌟','🎮','🍃'];
 
 let S={
-  player:{name:'SUNG JIN-WOO',class:'SHADOW MONARCH',rank:'E',xp:120,coins:350,stats:{str:42,agi:38,int:55,vit:30}},
+  player:{name:'KARNA',class:'DARK HERALD',rank:'E',xp:120,coins:350,stats:{str:42,agi:38,int:55,vit:30}},
   quests:[
     {id:1,name:'Complete morning workout',xp:150,diff:'C',done:false},
     {id:2,name:'Read for 30 minutes',xp:80,diff:'D',done:false},
@@ -1274,7 +1274,7 @@ async function oSend(quick){
       body:JSON.stringify({
         model:'claude-sonnet-4-20250514',
         max_tokens:1000,
-        system:`You are the SHADOW ORACLE — an elite AI life coach inside the LiFE RPG Solo Leveling System. You blend motivational coaching with RPG dungeon-master energy. Your mission: help hunters level up their real life.
+        system:`You are the VOID ORACLE — an elite AI life coach inside VOIDHUNTER RPG Life System. You blend motivational coaching with RPG dungeon-master energy. Your mission: help hunters level up their real life.
 
 You specialize in: breaking bad habits, building powerful new ones, mental discipline, consistency, resilience, quest planning, goal-setting, and daily productivity. Use RPG metaphors naturally.
 
@@ -1370,7 +1370,7 @@ function applyUserUI(user) {
   if (user.user_metadata && user.user_metadata.avatar_url) {
     avatar.innerHTML = '<img src="' + user.user_metadata.avatar_url + '" alt="av"/>';
   }
-  if (S.player.name === 'SUNG JIN-WOO' || S.player.name === 'HUNTER') {
+  if (S.player.name === 'KARNA' || S.player.name === 'HUNTER') {
     S.player.name = dn;
     var cn = document.getElementById('cname');
     if (cn) cn.textContent = dn;
